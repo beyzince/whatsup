@@ -32,15 +32,15 @@ public class CreateNumber implements Runnable {
     private FileWriter csvWriter = null;
     private CSVPrinter csvPrinter=null;
 
-    private static String CLIENT_ID = "402774853073-08ebbcc0uel5eel25pbld8ki4hgdbcu1.apps.googleusercontent.com";
-    private static String CLIENT_SECRET = "LNzOzWoDA1GyDWlJHemOLLDh";
+    private static String CLIENT_ID = "";
+    private static String CLIENT_SECRET = "";
     //private static String REDIRECT_URI = "urn:ietf:wg:oauth:2.0:oob";
     private static String OAUTH_SCOPE = "https://www.googleapis.com/auth/webmasters.readonly";
 
     @Override
     public void run() {
 
-        String key = "AIzaSyCGvygTiU1G2fvJhlQ0yKS1TI2oYfHC9ZM";
+        String key = "";
         String qry = "WhatsAppCrawler";
 
 
@@ -48,7 +48,7 @@ public class CreateNumber implements Runnable {
         try {
             url = new
                     URL("https://www.googleapis.com/customsearch/v1?key="
-                    + key + "AIzaSyCGvygTiU1G2fvJhlQ0yKS1TI2oYfHC9ZM" + qry + "&alt=json");
+                    + key + "" + qry + "&alt=json");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
